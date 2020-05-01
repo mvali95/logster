@@ -15,7 +15,9 @@
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "jquery": "3.4.1",
@@ -52,6 +54,8 @@
   },
   "dependencies": {
     "lodash": "~4.17.13",
-    "moment": "~2.22.2"
-  }
+    "moment": "~2.22.2",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
